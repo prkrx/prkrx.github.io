@@ -48,3 +48,21 @@ animMeter();
             }
         });
     });
+
+const langEL = document.querySelector('.langwarp');
+const link = document.querySelectorAll('a');
+const desc = document.querySelector('.description-me');
+
+link.forEach(el =>
+	     el.addEventListener('click', () => {
+		langEL.querySelector('.active').classList.remove('active');
+		el.classList.add('active');
+		const attr = el.getAtrribute('language')
+		
+		desc.textContent = data[attr].description-me;
+	});
+});
+
+var data {
+	"Indonesian":
+	{ "description-me" : "Pikiran teknologi yang inovatif dengan 2 tahun pengalaman bekerja sebagai programmer komputer. Keahlian yang luas dalam sistem jaringan dan bekerja dengan komputer mainframe."
