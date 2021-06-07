@@ -50,7 +50,7 @@ animMeter();
     });
 
 const langEL = document.querySelector('.langwarp');
-const link = document.querySelectorAll('a');
+const link = document.getElementById('langID');
 const desc = document.querySelector('.description-me');
 
 link.forEach(el =>
